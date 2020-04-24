@@ -17,6 +17,7 @@ The main objective of oribot is to help medium and small servers to perform adva
 
 > We are working on a guide
 
+- help
 - commands  
 - complete  
 - getip     
