@@ -17,17 +17,16 @@ The main objective of oribot is to help medium and small servers to perform adva
 
 > We are working on a guide
 
-- help
-- commands  
-- complete  
-- getip     
-- getmcsrv  
-- help
-- ipwhois   
-- ping      
-- sayhello  
-- servers40 
-- syncscan
+- help `(displays information for all commands)`
+- commands `(list all bot commands)`
+- complete `(performs a full scan including ports and whois to a minecraft server with nmap)`
+- getip `(get the ip through a host)`   
+- getmcsrv `(get all MCSRV information of a minecraft server)`
+- ipwhois `(get hosting information from an ip)`
+- ping `(get a super pong)`
+- sayhello `(hello)`
+- servers40 `(get whois information from all 40servidoresmc servers)`
+- syncscan `(perform a synchronized scan using scapy)`
 
 ## 💻 Installation
 Soon...
