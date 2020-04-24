@@ -28,6 +28,10 @@ The main objective of oribot is to help medium and small servers to perform adva
 - servers40 `(get whois information from all 40servidoresmc servers)`
 - syncscan `(perform a synchronized scan using scapy)`
 
+## Images
+
+![this](https://i.imgur.com/nhIVnkY.png)
+
 ## 💻 Installation
 Soon...
 
