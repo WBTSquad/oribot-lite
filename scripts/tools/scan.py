@@ -21,3 +21,28 @@ async def syn_scan(ctx, target, ports):
                 sys.stdout.write("?")
         else:
             sys.stdout.write(".")
+
+s = conf.L3socket()
+
+async def syn_silent_scan(ctx, target, ports):
+    sport = RandShort()
+    opened = []
+    for port in ports:
+        pkt = s.sr1(IP(dst=target) / TCP(sport=sport, dport=port, flags="S"), timeout=1, verbose=0)
+        sys.stdout.write('k')
+        if pkt is not None:
+            if pkt.haslayer(TCP):
+                if pkt[TCP].flags == 20:
+                    sys.stdout.write("~")
+                elif pkt[TCP].flags == 18:
+                    print('Opened :: %s:%s' % (target, port))
+                    opened.append(port)
+                else:
+                    sys.stdout.write('#')
+            elif pkt.haslayer(ICMP):
+                sys.stdout.write('&')
+            else:
+                sys.stdout.write("?")
+        else:
+            sys.stdout.write(".")
+    return opened
