@@ -14,7 +14,19 @@ The main objective of oribot is to help medium and small servers to perform adva
 - Obtain information from each server of [40servidoresmc](https://www.40servidoresmc.es/) website.
 
 ## 🤖 Commands and Guide
-Soon...
+
+> We are working on a guide
+
+- commands  
+- complete  
+- getip     
+- getmcsrv  
+- help
+- ipwhois   
+- ping      
+- sayhello  
+- servers40 
+- syncscan
 
 ## 💻 Installation
 Soon...
