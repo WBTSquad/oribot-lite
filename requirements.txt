@@ -22,4 +22,4 @@ six==1.14.0
 soupsieve==1.9.5
 typing==3.7.4.1
 virtualenv==20.0.17
-zipp==1.2.0
+zipp==3.19.1
